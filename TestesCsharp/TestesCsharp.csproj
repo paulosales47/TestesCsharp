@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnoBissexto.cs" />
+    <Compile Include="AnoBissextoTest.cs" />
     <Compile Include="MaiorMenor.cs" />
     <Compile Include="MatematicaMaluca.cs" />
     <Compile Include="MatematicaMalucaTest.cs" />
