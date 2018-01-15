@@ -10,7 +10,8 @@ namespace TestesCsharp
     [TestFixture]
     public class TestMaiorMenor
     {
-        [Test]
+        //TimeOut para o teste após passado o tempo limite configurado
+        [Test, Timeout(25)]
         public void TesteMaiorMenorRandom()
         {
             var listaDouble = new List<double>();
@@ -29,7 +30,8 @@ namespace TestesCsharp
 
         }
 
-        [Test]
+        //MaxTime não cancela o teste apenas compara o tempo decorrido do teste com o tempo estabelecido, caso ultrapasse reporta erro
+        [Test, MaxTime(30)]
         public void TesteMaiorMenorCrescente()
         {
             var listaDouble = new List<double>();
